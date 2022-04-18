@@ -21,7 +21,7 @@
           label="Formula"
           persistent-hint
           hint="Available formulas are ADD, AVG, CONCAT, +, -, /"
-          :rules="[v => !!v || 'Required', v => parseAndValidateFormula(v)]"
+          :rules="[v => !!v || 'Required (Available formulas are ADD, AVG, CONCAT, +, -, /)', v => parseAndValidateFormula(v)]"
           autocomplete="off"
           @input="handleInputDeb"
           @keydown.down.prevent="suggestionListDown"
